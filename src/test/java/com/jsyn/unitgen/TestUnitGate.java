@@ -25,6 +25,11 @@ public class TestUnitGate extends TestCase {
     protected SynthesisEngine synthesisEngine;
     protected double time;
 
+ // dummy test so gradle doesn't fail build
+    public void testDummy() {
+        
+    }
+    
     public void checkAutoDisable(LinearRamp ramp, UnitGate envelope) throws InterruptedException {
         double tolerance = 0.01;
         Add adder = new Add();
